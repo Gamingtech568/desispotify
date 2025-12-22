@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTSec</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="intro-container">
+        <img src="images/kt.jpg" alt="Seedhe Maut Logo" class="logo" id="logo">
+        <button class="start-btn" id="startBtn">
+            <span>START</span>
+        </button>
+    </div>
+
+    <div class="player-wrapper" id="playerWrapper">
+        <div class="album-sidebar" id="albumSidebar">
+            <h3>Albums</h3>
+            <ul id="albumList" class="album-list"></ul>
+        </div>
+        <div class="player-container" id="playerContainer">
+            <div class="player-header">
+                <img src="images/kt.jpg" alt="Seedhe Maut Logo" class="logo">
+            </div>
+            <div class="music-card">
+                <div class="album-art" id="albumArtContainer">
+                    <img src="images/kt.jpg" alt="Album Art" id="albumArt">
+                </div>
+                <div class="track-info">
+                    <h2 id="trackTitle">Loading...</h2>
+                    <p id="albumName">Album Name</p>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <div class="time-display">
+                        <span id="currentTime">0:00</span>
+                        <span id="totalTime">0:00</span>
+                    </div>
+                </div>
+                <div class="listener-count">
+                    <span id="listenerCount">42</span> Listeners Right Now
+                </div>
+                <div class="control-buttons">
+                    <button id="prevBtn" class="control-btn" aria-label="Previous Track"><i class="fas fa-step-backward"></i></button>
+                    <button id="playPauseBtn" class="control-btn play-pause" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
+                    <button id="nextBtn" class="control-btn" aria-label="Next Track"><i class="fas fa-step-forward"></i></button>
+                </div>
+                <div class="volume-container">
+                    <i class="fas fa-volume-up" id="volumeIcon"></i>
+                    <input type="range" id="volumeSlider" min="0" max="100" value="70" aria-label="Volume">
+                </div>
+                <div class="playlist-container">
+                    <h3 id="currentAlbumTitle">Playlist</h3>
+                    <ul id="playlist" class="playlist"></ul>
+                </div>
+                <!-- Social Card -->
+                <div class="social-card">
+                    <div class="background"></div>
+                    <div class="social-logo">Socials</div>
+                    <a href="https://instagram.com/__kunal__.py" target="_blank">
+                        <div class="box box1">
+                            <span class="icon">
+                                <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    </a>
+                    <a href="https://github.com/KTSec234" target="_blank">
+                        <div class="box box3">
+                            <span class="icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-.808-.407-1.943 1.006-1.943 1.006.218.68 1.417 1.006 1.417 1.006 1.27 2.175 3.716 1.55 4.62 1.185 0-.925.012-1.8.043-2.65-2.893-.633-5.153-2.88-5.153-5.42 0-1.236.996-2.24 2.24-2.24s2.24 1.004 2.24 2.24c0 1.54-2.26 3.787-5.153 5.42C6.687 21.09 8.947 22 12 22c6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="social-listener-count">
+                        <span id="socialListenerCount">42</span> Listeners Right Now
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" preload="metadata"></audio>
+    <script src="script.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'921432b9ce5a135d',t:'MTc0MjEyNzU1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+    <!-- Add this just before the closing </body> tag -->
+
+<!-- Watermark and Rights -->
+<div style="text-align: center; margin-top: 30px; font-family: 'Roboto', sans-serif; color: #888; font-size: 0.85rem;">
+    <p>© 2025 Kunal Gupta. All rights reserved.</p>
+    <p style="opacity: 0.5;">Designed & Developed by Kunal Gupta</p>
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>
