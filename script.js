@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: " thumak thumak", artist: "Kritika", album: "KRITIKA", url: "kritikavoice.mp3", art: "images/kritika_sketch.jpg" },
         { title: "लग जा गले", artist: " Lata Mangeshkar", album: "LOVE", url: "love1.mp3", art: "images/image.jpg" },
         { title: "Tuition Badmashi Kaa", artist: " Faujdar, Kiran, Masoom Sharma", album: "HARAYANA", url: "Tuition_Badmashi_Kaa_Hemant_Faujdar,_Kiran,_Masoom_Sharma,_Manisha.mp3", art: "images/image17.jpg" },
-        { title: "bhola parvat ka", artist: "KTSec234", album: "BHAGWAN KE BAJAN", url: "_Mai_bhola_parvat_ka_Bholenath_kaka_Devo_ke_dev_mahadev_Shiv_Sati.mp3", art: "images/image4.jpg" },
+        { title: "bhola parvat ka", artist: "KTSec234", album: "BHAGWAN KE BAJAN", url: "audio3.mp3", art: "images/image4.jpg" },
         { title: "Radha (Unconditional Love)", artist: "Kaka WRLD", album: "BHAGWAN KE BAJAN", url: "Kaka_WRLD_Radha_Unconditional_Love_Official_Video_Pellet_Drum_Productions.mp3", art: "images/image5.jpg" },
         { title: "RADHA RANI LAGE", artist: "SIMPAL KHAREL", album: "BHAGWAN KE BAJAN", url: "RADHA_RANI_LAGE_SIMPAL_KHAREL_NEW_SONG_RADHA_KRISHNA_BHAJAN_2023.mp3", art: "images/image5.jpg" },
         { title: "रावण रचित शिव तांडव स्तोत्रम्", artist: "Shiv Tandav Stotram", album: "BHAGWAN KE BAJAN", url: "audio6.mp3", art: "images/image4.jpg" },
