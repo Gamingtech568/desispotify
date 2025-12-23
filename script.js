@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: "Bhagatt Aadmi", artist: "Masoom Sharma", album: "HARAYANA", url: "Bhagatt_Aadmi_Tha_Masoom_Sharma_Pranjal_Dahiya,_Aman_Jaji_New_Haryanvi.mp3", art: "images/image3.jpg" },
         { title: "Khasa Aala Chahar Jai Veeru", artist: " Khasa Aala Chahar", album: "HARAYANA", url: "Khasa_Aala_Chahar_Official_Video_Jai_Veeru_Bamboo_Beats_New_Haryanvi.mp3", art: "images/image19.jpg" },
         { title: "Narayan Mil Jayega", artist: " Jubin Nautiyal", album: "BHAGWAN KE BAJAN", url: "audio5.mp3", art: "images/image30.jpg" },
-        { title: "Blue Eyes", artist: "Yo Yo Honey Singh", album: "FAVOURITE", url: "audio44.mp3", art: "images/image12.jpg" },
+        { title: "Blue Eyes", artist: "Yo Yo Honey Singh", album: "FAVOURITE", url: "audio44.mp3", art: "images/image33.jpg" },
         { title: "Z BLACK", artist: "KD DESIROCK", album: "HARAYANA", url: "audio16.mp3", art: "images/image23.jpg" },
         { title: "Pistal", artist: "PS Polist", album: "HARAYANA", url: "audio20.mp3", art: "images/image17.jpg" },
         { title: "Father Saab", artist: "Khasa Aala Chahar", album: "HARAYANA", url: "audio13.mp3", art: "images/image26.jpg" },
